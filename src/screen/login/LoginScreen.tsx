@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, SafeAreaView, StyleSheet, Text, TextInput, View } from 'react-native'
+import { s } from 'react-native-wind'
 
 const LoginScreen = () => {
   return (
@@ -7,8 +8,8 @@ const LoginScreen = () => {
         <View style={loginStyle.content}>
             <Text style={loginStyle.title}>Delivery app</Text>
             <TextInput style={loginStyle.inputbox} defaultValue='Email' />
-            <TextInput  secureTextEntry={true} defaultValue='Password'/>
-            <Button  title='Forgot Password!' />
+            <TextInput style={s`red-500`}  secureTextEntry={true} defaultValue='Password'/>
+            <Button title='Forgot Password!' />
             <Button title='Login'></Button>
             <Button title='Register' />
         </View>
